@@ -1,0 +1,11 @@
+# ~/.xbindkeysrc
+# F12 key for speech-to-text
+# Run in hold-down mode: start on press, stop on release
+
+# Start recording when F12 is pressed
+"bash -c 'echo start > /tmp/whisper_control'"
+    F12 + Release
+
+# Stop recording when F12 is released
+"bash -c 'echo stop > /tmp/whisper_control'"
+    Release + F12
